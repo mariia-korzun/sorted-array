@@ -1,0 +1,1 @@
+const sortedArray = require('../src/sorted-array');
