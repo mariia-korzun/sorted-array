@@ -1,6 +1,6 @@
 # Sorted-array
 
-The array of objects is given. Create two functions that sort products:  
+The array of objects is given. Create two functions that return sorted products in decending order:   
 1) according to rating  
 2) according to price (if there are two prices, use newUan)  
 
