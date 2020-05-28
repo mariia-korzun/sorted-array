@@ -333,13 +333,13 @@ const expectedResult2 = [
 describe('sortedByRating', () => {
 
     it('Should return sorted array according to rating', () => {
-        assert.deepEqual(sortedByRating(), expectedResult1)
-    });
+      expect(sortedByRating()).to.deep.equal(expectedResult1)
+  });
 })
 
 
 describe('sortedByPrice', () => {
     it('Should return sorted array according to price', () => {
-        assert.deepEqual(sortedByPrice(), expectedResult2)
-    });
+      expect(sortedByPrice()).to.deep.equal(expectedResult2)
+  });
 })
