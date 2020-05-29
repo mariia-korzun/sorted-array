@@ -331,7 +331,6 @@ const expectedResult2 = [
 ;
 
 describe('sortedByRating', () => {
-
     it('Should return sorted array according to rating', () => {
       expect(sortedByRating()).to.deep.equal(expectedResult1)
   });
