@@ -38,7 +38,7 @@ const products = [
         name: 'Apple iPhone 5s 16GB Space Gray',
     }, {
         ratingReviews: '59 отзывов',
-        price: '5 999 грн',
+        price: '6 000 грн',
         name: 'Nokia 5 Dual Sim Tempered Blue',
     }, {
         ratingReviews: '119 отзывов',
