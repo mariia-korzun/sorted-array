@@ -114,7 +114,7 @@ const expectedResult1 = [
   },
   {
     ratingReviews: '59 отзывов',
-    price: '5 999 грн',
+    price: '6 000 грн',
     name: 'Nokia 5 Dual Sim Tempered Blue'
   },
   {
@@ -162,9 +162,7 @@ const expectedResult1 = [
     price: { oldUan: '10 999 грн', newUan: '9 999 грн' },
     name: 'HTC One X10 Dual Sim Silver'
   }
-]
-
-
+];
 
 const expectedResult2 = [
       {
@@ -229,7 +227,7 @@ const expectedResult2 = [
       },
       {
         ratingReviews: '59 отзывов',
-        price: '5 999 грн',
+        price: '6 000 грн',
         name: 'Nokia 5 Dual Sim Tempered Blue'
       },
       {
@@ -327,8 +325,7 @@ const expectedResult2 = [
         price: { oldUan: '2 399 грн', newUan: '1 999 грн' },
         name: 'LG K5 X220ds Gold'
       }
-    ]
-;
+    ];
 
 describe('sortedByRating', () => {
     it('Should return sorted array according to rating', () => {
