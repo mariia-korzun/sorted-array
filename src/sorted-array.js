@@ -167,4 +167,4 @@ const sortedByPrice = () => {
   return;
   };
 
-module.exports = {sortedByRating, sortedByPrice};
+module.exports = {sortedByRating, sortedByPrice, products};
