@@ -158,7 +158,8 @@ const products = [
 
 
 const sortedByRating = () => {
-    return products.sort((productOne, productTwo) => {
+    let newArray = products.slice()
+    return newArray.sort((productOne, productTwo) => {
         let ratingOne = parseInt(productOne.ratingReviews.replace(' ', ''))
         let ratingTwo = parseInt(productTwo.ratingReviews.replace(' ', ''))
         if (ratingOne < ratingTwo) { return 1 }
@@ -169,7 +170,8 @@ const sortedByRating = () => {
 };
 
 const sortedByPrice = () => {
-    return products.sort((productOne, productTwo) => {
+    let newArray = products.slice()
+    return newArray.sort((productOne, productTwo) => {
         let priceOne = productOne.price
         let priceTwo = productTwo.price
 
