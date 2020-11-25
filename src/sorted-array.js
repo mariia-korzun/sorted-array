@@ -158,13 +158,27 @@ const products = [
 
 
 const sortedByRating = () => {
-  // Student implementation
-  return;
+    return products.sort((productOne, productTwo) => {
+        let ratingOne = parseInt(productOne.ratingReviews.replace(' ', ''))
+        let ratingTwo = parseInt(productTwo.ratingReviews.replace(' ', ''))
+        if (ratingOne < ratingTwo) { return 1 }
+        if (ratingOne === ratingTwo) { return 0 }
+        if (ratingOne > ratingTwo) { return -1 }
+    })
+
 };
 
 const sortedByPrice = () => {
-  // Student implementation
-  return;
-  };
+    return products.sort((productOne, productTwo) => {
+        let priceOne = productOne.price
+        let priceTwo = productTwo.price
 
-module.exports = {sortedByRating, sortedByPrice, products};
+        priceOne = typeof priceOne === 'object' ? parseInt(priceOne.newUan.replace(' ', '')) : parseInt(priceOne.replace(' ', ''))
+        priceTwo = typeof priceTwo === 'object' ? parseInt(priceTwo.newUan.replace(' ', '')) : parseInt(priceTwo.replace(' ', ''))
+        if (priceOne < priceTwo) { return 1 }
+        if (priceOne === priceTwo) { return 0 }
+        if (priceOne > priceTwo) { return -1 }
+    })
+};
+
+module.exports = { sortedByRating, sortedByPrice, products };
